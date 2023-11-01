@@ -167,7 +167,7 @@ class _BookCarPageState extends State<BookCarPage> {
                               subtitle: Padding(
                                 padding: EdgeInsets.only(left: 4.w),
                                 child: Text(
-                                  'Miramer, San Diego',
+                                  'Bekasi, Bekasi planet',
                                   style: theme.displayLarge!.copyWith(
                                       color: Colors.white,
                                       fontSize: 17.5.sp,

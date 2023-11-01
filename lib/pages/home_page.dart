@@ -58,7 +58,7 @@ class HomePage extends StatelessWidget {
                     from: 100,
                     duration: const Duration(milliseconds: 1000),
                     child: Text(
-                      'Miramer, San Diego',
+                      'Bekasi, Bekasi Planet',
                       style: theme.titleLarge!.copyWith(
                         color: Colors.black,
                         fontWeight: FontWeight.w900,
