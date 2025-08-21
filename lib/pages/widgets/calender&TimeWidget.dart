@@ -63,7 +63,7 @@ class _CalenderandTimeWidgetState extends State<CalenderandTimeWidget> {
                         padding: EdgeInsets.only(left: 0.w),
                         child: Text(
                           widget.calender,
-                          style: theme.headline1!.copyWith(
+                          style: theme.displayLarge!.copyWith(
                               color: Color.fromARGB(255, 207, 207, 207),
                               fontSize: 17.sp),
                         ),
@@ -75,7 +75,7 @@ class _CalenderandTimeWidgetState extends State<CalenderandTimeWidget> {
                             .format(DateTime.now())
                             .toString()
                             : controller.text,
-                        style: theme.headline1!.copyWith(
+                        style: theme.displayLarge!.copyWith(
                           fontSize: 16.5.sp,
                           color: Colors.white,
                         ),
@@ -122,14 +122,14 @@ class _CalenderandTimeWidgetState extends State<CalenderandTimeWidget> {
                         Text(
                           widget
                               .time, // Replace with your custom time widget string
-                          style: theme.headline1!.copyWith(
+                          style: theme.displayLarge!.copyWith(
                             fontSize: 16.1.sp,
                             color: Color.fromARGB(255, 207, 207, 207),
                           ),
                         ),
                         Text(
                           _timeOfDay.format(context).toString(),
-                          style: theme.headline1!.copyWith(
+                          style: theme.displayLarge!.copyWith(
                             fontSize: 17.5.sp,
                             color: Colors.white,
                           ),
@@ -159,13 +159,13 @@ class _CalenderandTimeWidgetState extends State<CalenderandTimeWidget> {
                   onPrimary: Colors.black,
                   onSurface: const Color.fromARGB(255, 37, 53, 61)),
               textTheme: Theme.of(context).textTheme.copyWith(
-                headline6: Theme.of(context).textTheme.headline6!.copyWith(
+                titleLarge: Theme.of(context).textTheme.titleLarge!.copyWith(
                   fontSize: 26.sp,
                 ),
               ),
               textButtonTheme: TextButtonThemeData(
                 style: TextButton.styleFrom(
-                  primary: Colors.red,
+                  foregroundColor: Colors.red,
                 ),
               ),
             ),
@@ -197,13 +197,13 @@ class _CalenderandTimeWidgetState extends State<CalenderandTimeWidget> {
               onSurface: const Color.fromARGB(255, 37, 53, 61),
             ),
             textTheme: Theme.of(context).textTheme.copyWith(
-              headline6: Theme.of(context).textTheme.headline6!.copyWith(
+              titleLarge: Theme.of(context).textTheme.titleLarge!.copyWith(
                 fontSize: 26.sp,
               ),
             ),
             textButtonTheme: TextButtonThemeData(
               style: TextButton.styleFrom(
-                primary: Colors.red,
+                foregroundColor: Colors.red,
               ),
             ),
           ),
