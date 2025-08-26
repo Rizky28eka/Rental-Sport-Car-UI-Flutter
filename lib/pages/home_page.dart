@@ -51,23 +51,25 @@ class HomePage extends StatelessWidget {
                 SizedBox(
                   width: 3.w,
                 ),
-                Padding(
-                  padding: EdgeInsets.only(bottom: 2.h),
-                  child: FadeInLeft(
-                    delay: const Duration(seconds: 1),
-                    from: 100,
-                    duration: const Duration(milliseconds: 1000),
-                    child: Text(
-                      'Bekasi, Bekasi Planet',
-                      style: theme.titleLarge!.copyWith(
-                        color: Colors.black,
-                        fontWeight: FontWeight.w900,
-                        fontSize: 22.5.sp,
+                Expanded(
+                  child: Padding(
+                    padding: EdgeInsets.only(bottom: 2.h),
+                    child: FadeInLeft(
+                      delay: const Duration(seconds: 1),
+                      from: 100,
+                      duration: const Duration(milliseconds: 1000),
+                      child: Text(
+                        'Bekasi, Bekasi Planet',
+                        style: theme.titleLarge!.copyWith(
+                          color: Colors.black,
+                          fontWeight: FontWeight.w900,
+                          fontSize: 22.5.sp,
+                        ),
+                        overflow: TextOverflow.ellipsis,
                       ),
                     ),
                   ),
                 ),
-                const Spacer(),
                 FadeInRight(
                   from: 100,
                   delay: const Duration(seconds: 1),
